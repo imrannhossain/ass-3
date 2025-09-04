@@ -52,11 +52,34 @@
     <header class=" lg:container lg: mx-auto">
         <nav>
             <div class="navbar bg-base-100 ">
-                <div class="navbar-start ">
+                <div class="navbar-start    ">
+                    
+                    <div class="rounded-full  flex flex-row-reverse   lg:flex-none justify-end">
+                        <div class="dropdown shadow rounded-full ml-30  lg:hidden ">
+                            <div tabindex="0" role="button" class="btn btn-ghost  ">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
 
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-36 mr-80 shadow">
+                                <li><a class="font-bold text-black">Home</a></li>
 
-                    <a class="btn btn-ghost text-xl"> <span class="bg-btn-bg rounded-full"> <i
-                                class="fa-solid fa-arrow-right -rotate-40 "></i></span>Rinterio</a>
+                                <li><a>Service</a></li>
+                                <li><a>portfolio</a></li>
+                                <li><a>Blogs</a></li>
+                                <li><a>Contact Us</a></li>
+                            </ul>
+                        </div>
+                        
+
+                        <a class="btn btn-ghost text-xl"> <span class="bg-btn-bg rounded-full"> <i
+                                    class="fa-solid fa-arrow-right -rotate-40 "></i></span>Rinterio</a>
+                           
+                    </div>
                 </div>
 
 
@@ -73,10 +96,10 @@
 
                 <div class="navbar-end lg:flex hidden  gap-3 ">
                     <div class="flex  gap-3">
-                        <div class=" bg-bg-card shadow-lg p-2 rounded-full mx-auto">
+                        <div class=" bg-bg-card shadow p-2 rounded-full mx-auto">
                             <a href=""> <i class="fa-solid fa-magnifying-glass"></i></a>
                         </div>
-                        <div class=" shadow-lg p-2 rounded-full mx-auto  ">
+                        <div class=" shadow p-2 rounded-full mx-auto  ">
                             <a href=""> <i class="fa-solid fa-cart-shopping"></i></a>
                         </div>
                     </div>
@@ -91,24 +114,7 @@
 
 
                 </div>
-                <div class="dropdown  flex-1   ml-40  lg:hidden ">
-                    <div tabindex="0" role="button" class="btn btn-ghost  ">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-36    shadow">
-                        <li><a class="font-bold text-black">Home</a></li>
 
-                        <li><a>Service</a></li>
-                        <li><a>portfolio</a></li>
-                        <li><a>Blogs</a></li>
-                        <li><a>Contact Us</a></li>
-                    </ul>
-                </div>
         </nav>
 
         <!-- Added Image -->
@@ -118,12 +124,12 @@
                 <img src="assets/banner.png" alt="">
             </div>
 
-            <h1 class="text-5xl text-black font-black p-2">A barn house of this design has a <br> <span
+            <h1 class="lg:text-6xl text-4xl text-black font-black p-2">A barn house of this design has a <br> <span
                     class=" block mt-2"> striking appearance</span> </h1>
-            <p class="w-2/3 mx-auto text-gray-500 mt-3">The barn house captivates with its blend of rustic charm and
+            <p class="lg:w-2/3 mx-auto text-gray-500 mt-3 ">The barn house captivates with its blend of rustic charm and
                 modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the
                 space with natural light.</p>
-            <button class="mt-4 btn bg-btn-secondary  px-4 rounded-full"> View Details
+            <button class=" mt-4 btn bg-btn-secondary  lg:px-4 rounded-full px-32"> View Details
                 <span class="rounded-full bg-btn-bg "> <i class="fa-solid fa-arrow-right -rotate-40 "></i>
                 </span></button>
 
