@@ -1,11 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hose</title>
+    <title>Hose Design</title>
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Added font awesome CDN -->
+    <script src="https://kit.fontawesome.com/36e9c7733a.js" crossorigin="anonymous"></script>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'btn-bg': 'rgba(171, 239, 95, 1)',
+                        'btn-secondary': 'rgba(171, 239, 95, 0.5)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <style>
+        .manrope-font {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+
+
+
 </head>
-<body>
-    
+
+<body class="manrope-font">
+
+    <header class="container mx-auto">
+        <nav>
+            <div class="navbar bg-base-100 ">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li><a></a></li>
+                            <li>
+                                <a>Parent</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl"> <span class="bg-btn-bg rounded-full"> <i
+                                class="fa-solid fa-arrow-right -rotate-40 "></i></span>Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="font-bold text-black">Home</a></li>
+
+                        <li><a>Service</a></li>
+                        <li><a>portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn bg-btn-bg rounded-full font-bold text-1xl">Book Consult <span
+                            class="bg-black text-white p-0.5 rounded-full"> <i
+                                class="fa-solid fa-arrow-right -rotate-40 "></i></span></a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Added Image -->
+        <section class="mt-5 text-center ">
+
+            <div class="flex justify-center items-center ">
+                <img src="assets/banner.png" alt="">
+            </div>
+
+            <h1 class="text-5xl text-black font-black p-2">A barn house of this design has a <br> <span
+                    class=" block mt-2"> striking appearance</span> </h1>
+            <p class="w-2/3 mx-auto text-gray-500 mt-3">The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the
+                space with natural light.</p>
+            <button class="mt-4 btn bg-btn-secondary  px-4 rounded-full"> View Details
+               <span class="rounded-full bg-btn-bg "> <i class="fa-solid fa-arrow-right -rotate-40 "></i> </span></button>
+
+        </section>
+
+
+
+    </header>
+
+
+
 </body>
+
 </html>
