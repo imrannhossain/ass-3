@@ -22,6 +22,7 @@
                         clifford: '#da373d',
                         'btn-bg': 'rgba(171, 239, 95, 1)',
                         'btn-secondary': 'rgba(171, 239, 95, 0.5)',
+                        'bg-card': 'rgba(255, 255, 255, 1)',
                     }
                 }
             }
@@ -51,31 +52,14 @@
     <header class="container mx-auto">
         <nav>
             <div class="navbar bg-base-100 ">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li><a></a></li>
-                            <li>
-                                <a>Parent</a>
-                                <ul class="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </li>
-                            <li><a>Item 3</a></li>
-                        </ul>
-                    </div>
+                <div class="navbar-start ">
+
+
                     <a class="btn btn-ghost text-xl"> <span class="bg-btn-bg rounded-full"> <i
                                 class="fa-solid fa-arrow-right -rotate-40 "></i></span>Rinterio</a>
                 </div>
+
+
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
                         <li><a class="font-bold text-black">Home</a></li>
@@ -86,12 +70,45 @@
                         <li><a>Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end">
-                    <a class="btn bg-btn-bg rounded-full font-bold text-1xl">Book Consult <span
-                            class="bg-black text-white p-0.5 rounded-full"> <i
-                                class="fa-solid fa-arrow-right -rotate-40 "></i></span></a>
+
+                <div class="navbar-end lg:flex hidden  gap-3 ">
+                    <div class="flex  gap-3">
+                        <div class=" bg-bg-card shadow-lg p-2 rounded-full mx-auto">
+                            <a href=""> <i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
+                        <div class=" shadow-lg p-2 rounded-full mx-auto  ">
+                            <a href=""> <i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                    </div>
+
+                    <div>
+
+                        <a class="btn bg-btn-bg rounded-full font-bold text-xl">Book Consult <span
+                                class="bg-black text-white p-0.5 rounded-full"> <i
+                                    class="fa-solid fa-arrow-right -rotate-40 "></i></span></a>
+                    </div>
+
+
+
                 </div>
-            </div>
+                <div class="dropdown lg:flex-none flex-1  lg:ml-0 ml-40  ">
+                    <div tabindex="0" role="button" class="btn btn-ghost  ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a class="font-bold text-black">Home</a></li>
+
+                        <li><a>Service</a></li>
+                        <li><a>portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
         </nav>
 
         <!-- Added Image -->
@@ -107,7 +124,8 @@
                 modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the
                 space with natural light.</p>
             <button class="mt-4 btn bg-btn-secondary  px-4 rounded-full"> View Details
-               <span class="rounded-full bg-btn-bg "> <i class="fa-solid fa-arrow-right -rotate-40 "></i> </span></button>
+                <span class="rounded-full bg-btn-bg "> <i class="fa-solid fa-arrow-right -rotate-40 "></i>
+                </span></button>
 
         </section>
 
